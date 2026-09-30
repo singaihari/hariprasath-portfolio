@@ -1,0 +1,1 @@
+let last=0;addEventListener("scroll",()=>{let now=performance.now();if(now-last<16)return;last=now;const s=document.querySelector(".showcase");if(s&&innerWidth>950){let p=Math.min(scrollY/600,1);s.style.transform=`translateY(${p*28}px) scale(${1-p*.025})`}});
